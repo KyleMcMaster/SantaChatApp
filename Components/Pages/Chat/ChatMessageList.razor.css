@@ -1,6 +1,9 @@
 ﻿.message-list-container {
-    margin: 2rem 1.5rem;
     flex-grow: 1;
+    background-color: #16213e;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: white;
 }
 
 .message-list {
@@ -12,7 +15,7 @@
 .no-messages {
     text-align: center;
     font-size: 1.25rem;
-    color: #999;
+    color: #a1a1aa;
     margin-top: calc(40vh - 18rem);
 }
 

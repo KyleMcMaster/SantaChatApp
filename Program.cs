@@ -22,7 +22,7 @@ var chatClient = openAIClient.GetOpenAIResponseClient("gpt-4o-mini").AsIChatClie
 
 var embeddingGenerator = openAIClient.GetEmbeddingClient("text-embedding-3-small").AsIEmbeddingGenerator();
 
-var vectorStorePath = Path.Combine(AppContext.BaseDirectory, "vector-store.db");
+var vectorStorePath = Path.Combine(AppContext.BaseDirectory, "vector-store1.db");
 var vectorStoreConnectionString = $"Data Source={vectorStorePath}";
 builder.Services.AddSqliteVectorStore(_ => vectorStoreConnectionString);
 builder.Services.AddSqliteCollection<string, IngestedChunk>(IngestedChunk.CollectionName, vectorStoreConnectionString);

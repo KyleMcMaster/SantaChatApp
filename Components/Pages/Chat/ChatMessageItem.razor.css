@@ -1,11 +1,11 @@
 ﻿.user-message {
-    background: rgb(182 215 232);
+    background: #4338ca;
     align-self: flex-end;
     min-width: 25%;
     max-width: calc(100% - 5rem);
     padding: 0.5rem 1.25rem;
     border-radius: 0.25rem; 
-    color: #1F2937; 
+    color: white; 
     white-space: pre-wrap; 
 }
 
@@ -32,7 +32,7 @@
     width: 1.5rem; 
     height: 1.5rem; 
     color: #ffffff; 
-    background: #9b72ce;
+    background: #7c3aed;
 }
 
     .assistant-message-icon svg {
@@ -108,13 +108,15 @@
 }
 
 ::deep th, ::deep tr:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 ::deep pre > code {
-    background-color: white;
+    background-color: #1e1e2e;
     display: block;
     padding: 0.5rem 1rem;
     margin: 1rem 0;
     overflow-x: auto;
+    border-radius: 0.375rem;
+    border: 1px solid #3d3d4d;
 }

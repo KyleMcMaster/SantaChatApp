@@ -11,16 +11,15 @@
 
 <ChatMessageList Messages="@messages" InProgressMessage="@currentResponseMessage">
     <NoMessagesContent>
-        <div>To get started, try asking about these example documents. You can replace these with your own data and replace this message.</div>
-        <ChatCitation File="Example_Emergency_Survival_Kit.pdf"/>
-        <ChatCitation File="Example_GPS_Watch.md"/>
+        <div>To get started, try asking about these documents.</div>
+        <ChatCitation File="NaughtyOrNice.md"/>
+        <ChatCitation File="LetterToSanta.md"/>
     </NoMessagesContent>
 </ChatMessageList>
 
 <div class="chat-container">
     <ChatSuggestions OnSelected="@AddUserMessageAsync" @ref="@chatSuggestions" />
     <ChatInput OnSend="@AddUserMessageAsync" @ref="@chatInput" />
-    <SurveyPrompt /> @* Remove this line to eliminate the template survey message *@
 </div>
 
 @code {
